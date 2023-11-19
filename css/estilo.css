@@ -14,6 +14,12 @@ body {
 header {
     text-align: center;
     margin-bottom: 15px;
+    
+}
+
+.navbar-toggler {
+    background-color: #fff;
+    
 }
 
 h1 {
