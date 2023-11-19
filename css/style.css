@@ -1,0 +1,545 @@
+
+/*Lo visto en clase de referencia-------------------------
+Existen dos maneras fundamentales de darle estilos a los elementos/etiquetas de html
+_____________________
+
+1)Mediante selector de etiquetas o también llamadas selector de elementos
+2)Mediante selector de clases
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+background-color: rgb(39, 39, 39);
+}
+
+h1 {
+color: rgb(226, 212, 25);
+}
+
+div ul li {
+    display: inline-block;
+    /* text-decoration: none; */
+    list-style: none;
+    vertical-align: middle;
+}
+
+/*div a{
+    color: aliceblue;
+    margin-right: 10px;
+}
+
+
+/*Aplicamos estilos al header*/
+header{
+    background-color: #274060;
+}
+
+.img-sly{
+    width: 50px;
+    margin-left: 15px;
+}
+
+header img, nav {
+    display: inline-block;
+    list-style: middle;
+    margin: 5px;
+
+}
+
+header nav{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+header nav a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+    border: flex;
+    align-items: center;
+}
+
+.div-presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    border: 2px solid;
+    padding: 5px;
+    margin: 20px 40px;
+    width: 300px;
+    height: 280px;
+}
+
+.div-informacion img {
+    max-width: 100%;
+    height: auto;
+    align-self: flex-end;
+}
+
+.div-informacion a {
+    color: #F35E08;
+    text-decoration: underline;
+}
+
+.div-informacion {
+width: 850px;
+height: 280px;
+font-size: 18px;
+}
+
+.div-informacion img {
+    width: 50px;
+    height: 50px;
+}
+.div-informacion p {
+    padding-top: 25px;
+}
+
+.div-formulario h2 {
+    color: yellow;
+}
+
+.div-formulario input[type="e-mail"]{
+    background-color: black(0, 191, 99, 0.5);
+    text-align: center;
+    border: solid;
+    border-radius: 3px;
+    width: 300px;
+    height: 25px;
+    margin-right: 24px;
+}
+
+.div-formulario input[type="submit"]{
+    background-color: aliceblue;
+    color: #000000;
+    text-align: center;
+    border: 3px solid #F35E08;
+    border-radius: 8px;
+    width: 120px;
+    height: 26px;
+}
+
+
+.img-sly {
+    width: 50px;
+    margin-left: 15px;
+    size: 10px;
+}
+
+/*Aplicamos estilos al main*/
+h1{
+    text-align: center;
+}
+main{
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main section{
+    margin: 5px;
+}
+main section div{
+    width: 19rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+main section div img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+main section div h3{
+    text-align: center;
+    font-size: large;
+    color: chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main section div p{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/*Aplicamos estilos al footer*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #335C81;
+    flex-wrap: wrap;
+}
+footer .copy{
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer .redes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 15px;
+}
+footer .redes a{
+    padding: 5px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/*Configuración general----------------------------------------------------
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div a {
+    margin-right: 10px;
+    color: aliceblue;
+}
+
+hr div a {
+    height:100vh;
+    width:.5vw;
+    border-width:0;
+    color:#ffffff;
+    background-color:#000;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: azure;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+body h1 {
+    width: 700px;
+    margin-top: 5px;
+    size: 5px;
+    flex: auto;
+}
+
+/*Estilos del header
+
+.img-sly {
+    width: 50px;
+    margin-left: 15px;
+    size: 10px;
+
+}
+
+head div a{
+    color: #fed353;
+    padding-right: 0.5%;
+    text-align: left;
+    text-decoration: none;
+}
+body h1{
+    padding-right: 60%;
+    background-color: #394651;
+    color:#fed353;
+    
+}
+/*Aplicamos estilos al header
+header{
+    background-color: #0c181c;
+    text-align: center;
+}
+header nav{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+header nav a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Aplicamos estilos al main
+h1{
+    text-align: center;
+}
+main{
+    background-color: #394651;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main section{
+    margin: 5px;
+}
+main section div{
+    width: 19rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+main section div img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+main section div h3{
+    text-align: center;
+    font-size: large;
+    color: chocolate;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main section div p{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    line-height: 30px;
+}
+
+/*Aplicamos estilos al footer*/
+
+/*footer{
+    display: flex;
+    justify-content: center;
+    background-color:#ff5f7c;
+    flex-wrap: wrap;
+}
+footer .copy{
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer .redes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+}
+footer .redes a{
+    padding: 5px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+*/
+
+/*Reseteo de configuraciones
+
+
+------------------------------------------------------------------------------------------------------------
+*/
+
+
+/*Estilos de body
+
+body{
+    background-color: #254441;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Estilos del header
+
+.img-sly{
+    width: 50px;
+    margin-left: 15px;
+}
+
+/*Estilos de los enlaces
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    color: aliceblue;
+}
+
+/*Estilos de la iamgen de navegación
+header img, nav {
+    display: inline-block;
+    list-style: middle;
+    margin: 5px;
+
+}
+
+/*Estilos de la lista de navegación
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+
+hr {
+    border: flex;
+    align-items: center;
+}
+
+.div-presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    border: 2px solid;
+    padding: 5px;
+    margin: 20px 40px;
+    width: 300px;
+    height: 280px;
+}
+
+.div-informacion img {
+    max-width: 100%;
+    height: auto;
+    align-self: flex-end;
+}
+
+.div-informacion a {
+    color: #F35E08;
+    text-decoration: underline;
+}
+
+.div-informacion {
+width: 850px;
+height: 280px;
+font-size: 18px;
+}
+
+.div-informacion img {
+    width: 50px;
+    height: 50px;
+}
+.div-informacion p {
+    padding-top: 25px;
+}
+
+.div-formulario h2 {
+    color: yellow;
+}
+
+.div-formulario input[type="e-mail"]{
+    background-color: black(0, 191, 99, 0.5);
+    text-align: center;
+    border: solid;
+    border-radius: 3px;
+    width: 300px;
+    height: 25px;
+    margin-right: 24px;
+}
+
+.div-formulario input[type="submit"]{
+    background-color: aliceblue;
+    color: #000000;
+    text-align: center;
+    border: 3px solid #F35E08;
+    border-radius: 8px;
+    width: 120px;
+    height: 26px;
+}
+
+footer {
+    text-align: center; /* Centra el contenido dentro del footer 
+    margin-top: 15px;
+    background-color:#ff5f7c;
+    flex: auto;
+}
+
+footer img {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    /* vertical-align: middle; 
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+/* Página Patrones Creacionales - Estructurales - Comportamiento 
+.main-patron {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-principal h1{
+    text-align: center;
+    font-weight: bold;
+    color: #00BF63;
+    font-size: 35px;
+}
+
+.div-principal img {
+    border: 2px solid rgb(192, 179, 179);
+    border-radius: 5px;
+}
+
+.div-proposito{
+    background-color: rgb(240, 233, 233);
+    width: 800px;
+    height: auto;
+    padding: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.div-pros {
+    padding: 5px;
+    width: 800px;
+    border: 2px solid rgb(178, 169, 169);
+    border-radius: 3px;
+}
+
+.div-contras{
+    padding: 5px;
+    width: 800px;
+    border: 2px solid rgba(178, 169, 169);
+    border-radius: 3px;
+}
+
+.iframe-video {
+    border: 3px solid #F35E08;
+    border-radius: 2px;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+*/
+
+
+
+
+
+
+
+

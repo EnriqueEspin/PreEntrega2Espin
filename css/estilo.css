@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(39, 39, 39);
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: rgb(207, 207, 28);
+    font-size: 15px;
+    margin: 5px;
+}
+
+a {
+    color: rgb(207, 207, 28);
+    font-weight: bold;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+/* Lista de navargación redes */
+nav ul li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.nav-paginas ul li a {
+    color: #fff;
+    font-size: 25px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #fff;
+}
+
+/* Cuerpo */
+
+.main-informacion {
+    display: flex;
+    align-items: center;
+}
+
+.div-presentacion {
+    border: 3px solid #fff;
+    width: 400px;
+    height: 420px;
+    margin-left: 15px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.div-presentacion h2 {
+    margin-top: 7px;
+    color: yellow;
+    font-size: 20px;
+}
+
+.div-presentacion img {
+    max-width: 100%;
+    height: auto;
+}
+
+.div-informacion {
+    width: 980px;
+    height: 420px;
+    margin-left: 40px;
+
+
+}
+
+.div-informacion p {
+    color: aliceblue;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.div-informacion ul li {
+    color: aliceblue;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.div-formulario {
+    height: auto;
+    margin: 15px;
+}
+
+.div-formulario h2 {
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.div-formulario p {
+    color: #fff;
+}
+
+.div-formulario hr{
+    margin-top: 15px;
+}
+
+main{
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+main section{
+    margin: 5px;
+}
+main section div{
+    width: 19rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+main section div img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+   
+/*footer*/
+
+footer {
+    text-align: center;
+    background-color: #b93af8;
+    
+}
+
+.footer2 {
+    margin-top: 100px;
+}
+
+.copy {
+    color: aliceblue;
+    font-weight: bolder;
+} 
+
+.redes img {
+    height: 50px;
+    margin-top: 15px;
+}
