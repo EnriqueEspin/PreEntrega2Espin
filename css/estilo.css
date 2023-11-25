@@ -184,6 +184,18 @@ footer
     /* Alinear la imagen en la parte de abajo del contenedor div */
     align-self: flex-end;
 }
+
+#galeria .col-lg-4 {
+    margin: 0 !important;
+    padding: 25px;
+}
+#galeria img {
+width: 100%;
+height: 250px;
+}
+#galeria img:hover {
+    border: 5px solid #b93af8;
+}
 .div-informacion p {
     color: #fff;
 }
