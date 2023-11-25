@@ -144,13 +144,13 @@ main section div img{
     border-radius: 10px;
 }
    
-/*footer*/
+footer
 
 /*Páginas: Index - Patrones Diseño */
-/* .main-presentacion {
+ .main-presentacion {
     display: flex;
     align-items: center;
-} */
+} 
 
 .div-presentacion {
     /* Para acomodar los elementos de diferentes maneras */
@@ -211,6 +211,11 @@ main section div img{
 }
 .div-formulario p {
     color: #fff;
+}
+
+.div-informacion ul li {
+    color: #fff;
+
 }
 footer {
     text-align: center;
